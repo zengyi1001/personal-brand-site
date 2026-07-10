@@ -1,0 +1,60 @@
+locale: zh_Hans
+backend:
+  name: git-gateway
+  branch: main
+media_folder: public/uploads
+public_folder: /personal-brand-site/uploads
+site_url: https://zengyi1001.github.io/personal-brand-site/
+display_url: https://zengyi1001.github.io/personal-brand-site/
+logo_url: https://zengyi1001.github.io/personal-brand-site/favicon.svg
+publish_mode: simple
+
+collections:
+  - name: site
+    label: 网站内容
+    files:
+      - name: content
+        label: 个人资料、项目与文章
+        file: content/site.json
+        format: json
+        fields:
+          - label: 个人资料
+            name: profile
+            widget: object
+            fields:
+              - {label: 中文名, name: name, widget: string}
+              - {label: 英文名, name: englishName, widget: string}
+              - {label: 名字缩写, name: initials, widget: string}
+              - {label: 身份定位, name: role, widget: string}
+              - {label: 所在城市, name: location, widget: string}
+              - {label: 首页标题, name: headline, widget: string}
+              - {label: 首页介绍, name: intro, widget: text}
+              - {label: 关于我标题, name: aboutTitle, widget: string}
+              - {label: 关于我第一段, name: aboutOne, widget: text}
+              - {label: 关于我第二段, name: aboutTwo, widget: text}
+              - {label: 能力标签, name: capabilities, widget: list}
+              - {label: 邮箱, name: email, widget: string}
+              - {label: LinkedIn 链接, name: linkedin, widget: string}
+              - {label: 小红书链接, name: xiaohongshu, widget: string}
+          - label: 项目
+            name: projects
+            widget: list
+            summary: '{{fields.number}} · {{fields.title}}'
+            fields:
+              - {label: 编号, name: number, widget: string}
+              - {label: 项目名称, name: title, widget: string}
+              - {label: 项目类型, name: type, widget: string}
+              - {label: 年份, name: year, widget: string}
+              - {label: 色彩, name: tone, widget: select, options: [indigo, sage, clay]}
+              - {label: 一句话介绍, name: summary, widget: text}
+              - {label: 详细介绍, name: detail, widget: text}
+          - label: 文章
+            name: posts
+            widget: list
+            summary: '{{fields.date}} · {{fields.title}}'
+            fields:
+              - {label: 日期, name: date, widget: string, hint: '格式：2025.06.18'}
+              - {label: 分类, name: category, widget: string}
+              - {label: 标题, name: title, widget: string}
+              - {label: 阅读时间, name: read, widget: string}
+              - {label: 正文, name: body, widget: text}

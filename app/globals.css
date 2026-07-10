@@ -75,6 +75,7 @@ h2 { margin:0; font-size:clamp(38px,4.5vw,66px); line-height:1.18; letter-spacin
 .post-meta { display:flex; flex-direction:column; gap:8px; font-size:11px; }
 .post-meta time { opacity:.55; }
 .post h3 { margin:0; font-size:23px; font-weight:500; }
+.post-button { border:0; padding:0; background:transparent; color:inherit; cursor:pointer; text-align:left; font:inherit; }
 .post-read { text-align:right; font-size:11px; opacity:.65; }
 .publishing-note { margin-top:28px; font-size:12px; color:rgba(38,53,42,.55); }
 footer { background:var(--ink); color:var(--cream); padding:108px max(48px,calc((100% - 1420px)/2)); }
@@ -85,6 +86,11 @@ footer { background:var(--ink); color:var(--cream); padding:108px max(48px,calc(
 .footer-bottom { border-top:1px solid rgba(255,255,255,.15); margin-top:100px; padding-top:28px; display:grid; grid-template-columns:1fr 1fr auto; align-items:center; font-size:12px; }
 .brand-mark.light { border-color:var(--cream); }.socials { display:flex; gap:24px; }.socials a:hover { color:#b8c8ae; }
 .mobile-break { display:none; }
+.article-overlay { position:fixed; inset:0; z-index:50; padding:28px; background:rgba(38,53,42,.55); backdrop-filter:blur(8px); display:grid; place-items:center; }
+.article-panel { width:min(760px,100%); max-height:calc(100vh - 56px); overflow:auto; border-radius:28px; background:var(--cream); padding:clamp(28px,6vw,72px); box-shadow:0 30px 90px rgba(20,30,23,.28); }
+.article-panel h2 { margin:24px 0 36px; font-size:clamp(34px,5vw,58px); }
+.article-close { float:right; border:1px solid var(--line); border-radius:999px; background:transparent; padding:9px 14px; color:inherit; cursor:pointer; }
+.article-body { font-size:17px; line-height:1.95; }
 
 @media (max-width:900px) {
   .site-header,.hero,.section { width:calc(100% - 48px); }
