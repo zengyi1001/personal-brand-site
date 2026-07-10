@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "林墨 Lin Mo — 产品设计师与创作者",
-  description: "林墨的个人品牌网站：产品设计、体验研究、独立项目与设计文章。",
+  title: "曾一 Yi Zeng — 系统架构师与 C/C++ 工程师",
+  description: "曾一的个人技术网站：分布式系统、高性能网络、C/C++ 系统研发与 AI Agent Infra。",
   openGraph: {
-    title: "林墨 Lin Mo — 产品设计师与创作者",
-    description: "把复杂的问题，做成清晰而有温度的体验。",
+    title: "曾一 Yi Zeng — 系统架构师与 C/C++ 工程师",
+    description: "让复杂系统更可靠，也让智能工具真正服务于工程。",
     type: "website",
     locale: "zh_CN",
   },

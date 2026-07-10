@@ -45,7 +45,7 @@ export default function Home() {
           <div className="orb orb-one" />
           <div className="orb orb-two" />
           <div className="scribble">curious<br />by nature</div>
-          <div className="coordinate">31.2304° N<br />121.4737° E</div>
+          <div className="coordinate">22.5431° N<br />114.0579° E</div>
           <div className="portrait-shape"><span>{profile.name}</span></div>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function Home() {
       <section className="work section" id="work">
         <div className="section-heading">
           <div><p className="section-kicker">02 / 精选项目</p><h2>最近完成的事</h2></div>
-          <p>跨越数字产品、研究与独立出版。<br />每个项目都从一个值得追问的问题开始。</p>
+          <p>横跨分布式系统、高性能网络与 AI Infra。<br />每个项目都从一个真实而困难的工程问题开始。</p>
         </div>
         <div className="project-layout">
           <div className="project-tabs" role="list" aria-label="项目列表">
@@ -116,7 +116,7 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <p className="publishing-note">新文章与项目会持续发布在这里。订阅入口即将开放。</p>
+        <p className="publishing-note">这里持续记录系统架构、高性能网络与 AI Infra 的工程思考。</p>
       </section>
 
       <footer id="contact">
@@ -127,8 +127,8 @@ export default function Home() {
         </div>
         <div className="footer-bottom">
           <div className="footer-brand"><span className="brand-mark light">{profile.initials}</span><span>{profile.name} · {profile.englishName}</span></div>
-          <div className="socials"><a href={`mailto:${profile.email}`}>Email</a><a href={profile.linkedin}>LinkedIn</a><a href={profile.xiaohongshu}>小红书</a></div>
-          <p>© 2025 {profile.englishName}. 保持好奇。</p>
+          <div className="socials"><a href={`mailto:${profile.email}`}>Email</a><a href={profile.linkedin}>GitHub</a><a href={profile.xiaohongshu}>联系我</a></div>
+          <p>© 2026 {profile.englishName}. 持续构建，持续演进。</p>
         </div>
       </footer>
       {activePost && (

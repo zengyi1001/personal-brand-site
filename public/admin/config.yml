@@ -36,8 +36,8 @@ collections:
               - {label: 关于我第二段, name: aboutTwo, widget: text}
               - {label: 能力标签, name: capabilities, widget: list}
               - {label: 邮箱, name: email, widget: string}
-              - {label: LinkedIn 链接, name: linkedin, widget: string}
-              - {label: 小红书链接, name: xiaohongshu, widget: string}
+              - {label: GitHub 链接, name: linkedin, widget: string}
+              - {label: 其他联系链接, name: xiaohongshu, widget: string}
           - label: 项目
             name: projects
             widget: list
