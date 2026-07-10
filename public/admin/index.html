@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
     <title>内容管理 · 林墨</title>
+    <script>
+      if (window.location.hostname === "zengyi1001.github.io") {
+        window.location.replace(
+          `https://linmo-cms-auth.netlify.app/admin/${window.location.hash}`
+        );
+      }
+    </script>
   </head>
   <body>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
